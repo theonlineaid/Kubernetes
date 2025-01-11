@@ -1,0 +1,7 @@
+deployment:
+  name: web-server
+  replicas: 2
+  image: nginx
+
+service:
+  name: web-service
