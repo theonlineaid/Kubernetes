@@ -16,4 +16,5 @@ kubectl get po pod1
 kubectl exec -it ["pod name"] -- /bin/bash | /bin/sh
 
 kubectl logs ["pod name"]
+kubectl config current-context
 ```
