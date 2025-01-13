@@ -17,7 +17,7 @@ kubectl create deploy my-deployment --image=nginx --dry-run=client -o yaml > tem
 kubectl create service nodeport my-service --tcp=80:80 --dry-run=client -o yaml > templates/service.yaml
 ```
 
-### Create Chart
+### Deploy Create Chart
 ```
 helm install [first-relase] . // you can't take same name 
 NAME: fchart-relase
@@ -40,5 +40,11 @@ helm lint .
 
 ### Check Helm manifast compiler
 ```
+helm template .
 helm get manifest web-server
+```
+
+### Helm install problem 
+```
+helm install first-deploy . --dry-run
 ```
